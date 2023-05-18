@@ -260,7 +260,7 @@ For any inquiries or questions, feel free to contact me:
 
 ![image](https://github.com/AugustoBosa/Food-Explorer-Frontend/assets/115903598/93ba70a7-fc22-4e79-96d0-5f4d3dec5912) - [AugustoBosa](https://www.linkedin.com/in/augusto-bosa/)
 
-Please don't hesitate to reach out if you have any questions or need further assistance. like this, but the icons should be before the text
+Please don't hesitate to reach out if you have any questions or need further assistance.
 
 
 
