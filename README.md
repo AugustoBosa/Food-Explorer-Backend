@@ -1,5 +1,5 @@
 # Food Explorer
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/AugustoBosa/Food-Explorer-Frontend/blob/main/README.pt-br.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/AugustoBosa/Food-Explorer-Backend/blob/main/README.pt-br.md)
 
 > 🍔🌮 An interactive online menu for ordering and paying for food.
 
