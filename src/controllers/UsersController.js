@@ -13,6 +13,11 @@ class UsersController {
             throw new AppError("Para criar um novo usuário é nescessário preencher todos os campos.",400)
         }
  
+        const emailRegex = /^\S+@\S+\.\S+$/;
+        if (!emailRegex.test(email)) {
+          throw new AppError("Por favor, insira um endereço de e-mail válido.", 400);
+        }
+      
         const isEmailInUse = await knex("users").where({email}).first()
         if(isEmailInUse!=undefined){
             throw new AppError("O e-mail informado já está em uso, por favor informe um diferente.",400)
@@ -54,6 +59,12 @@ class UsersController {
         name ? updatedName=name : updatedName=user.name
         email ? updatedEmail=email : updatedEmail=user.email
         password ? updatedPassword=password : updatedPassword=user.password
+
+
+        const emailRegex = /^\S+@\S+\.\S+$/;
+        if (!emailRegex.test(updatedEmail)) {
+          throw new AppError("Por favor, insira um endereço de e-mail válido.", 400);
+        }
 
         const isEmailInUse= await knex("users").where({email:updatedEmail}).first()
         if(isEmailInUse && isEmailInUse.id !== user.id){
